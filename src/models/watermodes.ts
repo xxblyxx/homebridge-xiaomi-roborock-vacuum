@@ -28,37 +28,43 @@ export const watermodes: SpeedModes = {
       name: "High",
     },
   ],
-  // S6-MaxV + Custom
+  // S6-MaxV + Custom; preference is not to run mop, increasing lower range to support
   "gen1+custom": [
     // 0%      = Off
     {
-      homekitTopLevel: 0,
-      miLevel: 200,
-      name: "Off",
+        homekitTopLevel: 0,
+        miLevel: 200,
+        name: "Off",
     },
-    // 1-25%   = "Light"
+    // 1-10%      = Off
     {
-      homekitTopLevel: 25,
-      miLevel: 201,
-      name: "Light",
+        homekitTopLevel: 20,
+        miLevel: 200,
+        name: "Off",
     },
-    // 26-50%  = "Medium"
+    // 21-50%   = "Light"
     {
-      homekitTopLevel: 50,
-      miLevel: 202,
-      name: "Medium",
+        homekitTopLevel: 50,
+        miLevel: 201,
+        name: "Light",
     },
-    // 51-75% = "High"
+    // 51-70%  = "Medium"
     {
-      homekitTopLevel: 75,
-      miLevel: 203,
-      name: "High",
+        homekitTopLevel: 70,
+        miLevel: 202,
+        name: "Medium",
     },
-    // 76-100% = "Custom"
+    // 71-90% = "High"
     {
-      homekitTopLevel: 100,
-      miLevel: 204,
-      name: "Custom",
+        homekitTopLevel: 90,
+        miLevel: 203,
+        name: "High",
+    },
+    // 91-100% = "Custom"
+    {
+        homekitTopLevel: 100,
+        miLevel: 204,
+        name: "Custom",
     },
   ],
 };
