@@ -103,7 +103,7 @@ export const MODELS: Record<string, ModelDefinition[]> = {
   "roborock.vacuum.a75": [
     {
       speed: speedmodes["gen5"],
-      waterspeed: watermodes["gen1+custom"],
+      waterspeed: watermodes["gen1+customLessMop],
     },
   ],
   // S8
